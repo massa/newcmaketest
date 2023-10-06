@@ -9,6 +9,12 @@ project(
   LANGUAGES CXX
 )
 
+set(CMAKE_EXPERIMENTAL_CXX_MODULE_CMAKE_API aa1f7df0-828a-4fcd-9afc-2dc80491aca7)
+set(CMAKE_CXX_STANDARD 23)
+
+add_executable(newcmt ${PROJECT_SOURCE_DIR}/../src/main.cc)
+
+
 verbose_message("Adding tests under ${CMAKE_PROJECT_NAME}Tests...")
 
 foreach(file ${test_sources})
